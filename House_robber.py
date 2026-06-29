@@ -1,7 +1,7 @@
 class Solution:
     def rob(self, nums: List[int]) -> int:
         n=len(nums)
-        if n <= 2:
+        if n <= 2: # constrain = len should be greater than 0
             return max(nums)
         lt=[0]*n
         lt[0]=nums[0]
